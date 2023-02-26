@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Main = () => {
   return (
@@ -13,7 +14,9 @@ const Main = () => {
                 <p className='mb-8 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Dolor sed molestiae nulla repellendus reiciendis illo eius 
                     repudiandae expedita ipsam corrupti.</p>
-                <button className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300'>Contact</button>
+                <button className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300'>
+                    <AnchorLink href='#contact' offset="50">Contact</AnchorLink>
+                </button>
             </div>
             <div className='w-1/2 lg:max-w-lg w-6/5 '>
                 <img src="img/main.jpeg" alt="" />
