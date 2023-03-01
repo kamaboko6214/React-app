@@ -18,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "license": "UNLICENSED",
+  "heroku-postbuild":
+  "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
